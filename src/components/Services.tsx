@@ -9,8 +9,8 @@ const services = [
 ];
 
 const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.08 } },
+  hidden: { opacity: 1 },
+  show: { opacity: 1, transition: { staggerChildren: 0.08 } },
 };
 
 const item = {
@@ -36,7 +36,7 @@ const Services = () => (
         variants={container}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.1 }}
         className="grid md:grid-cols-2 gap-6"
       >
         {services.map((s) => (
