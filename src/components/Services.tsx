@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
-import { Mail, Calendar, FileText, Users, BarChart3, Globe } from "lucide-react";
+import { Video, FileText, CheckSquare, Headphones } from "lucide-react";
 
 const services = [
-  { icon: Mail, title: "Email Management", desc: "Inbox zero strategy, filtering, and professional responses." },
-  { icon: Calendar, title: "Calendar & Scheduling", desc: "Appointment setting, reminders, and time-zone coordination." },
-  { icon: FileText, title: "Document Preparation", desc: "Reports, presentations, and data entry with precision." },
-  { icon: Users, title: "Client Relations", desc: "Follow-ups, onboarding, and maintaining client databases." },
-  { icon: BarChart3, title: "Project Management", desc: "Task tracking, team coordination, and deadline management." },
-  { icon: Globe, title: "Social Media", desc: "Content scheduling, engagement, and analytics reporting." },
+  { icon: Video, title: "Video Editing", desc: "Professional video editing using CapCut — cuts, transitions, effects, and polished final output." },
+  { icon: Headphones, title: "Encoding", desc: "Media encoding and file conversion to ensure optimal quality and compatibility across platforms." },
+  { icon: FileText, title: "Transcription", desc: "Accurate audio and video transcription with attention to detail and fast turnaround." },
+  { icon: CheckSquare, title: "Website QA", desc: "Thorough website quality assurance — bug testing, UI checks, and cross-browser compatibility." },
 ];
 
 const container = {
@@ -39,7 +37,7 @@ const Services = () => (
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid md:grid-cols-2 gap-6"
       >
         {services.map((s) => (
           <motion.div

@@ -35,7 +35,7 @@ const Hero = () => (
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-10 max-w-lg"
         >
-          I help busy entrepreneurs reclaim their schedule by handling the tasks that keep them from doing what they love.
+          I specialize in video editing, encoding, transcription, and website QA — delivering polished results so you can focus on growing your business.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
